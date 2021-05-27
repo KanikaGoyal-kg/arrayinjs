@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <h1>Arrays in javascript</h1>
+    </head>
+    <body>
+        <script>
+           var names = ['Kanika', 'Naina', 'Palak', 'Sahib' ];
+           var occupation = ['job', 'business', 'job', 'job']
+           document.write(names[3]);
+           document.write("<br>");
+           document.write(names);
+           document.write("<br>");
+           document.write(names.length);
+           document.write("<br>");
+           document.write(names.sort()); //Will write the values in alphabetically order.
+           document.write("<br>");
+           document.write(names.pop()) //This will give you removed last value from array
+           document.write("<br>");
+           document.write(names.shift())//Will return first value only
+           document.write("<br>");
+           names.unshift("Poonam");//Will add value in starting
+           document.write(names);
+           document.write("<br>");
+           var check = Array.isArray(names);//Will give value in Boolean 
+           document.write(check);
+           document.write("<br>");
+           document.write(names.concat(occupation));//will join two arrays
+           document.write("<br>");
+           document.write(names.indexOf("Palak"));
+           document.write("<br>");
+           //Will work only in string
+           var str = "Hi beautiful, how are you and how do you do";//return character at that index
+           document.write(str.charAt(8));
+           document.write("<br>");
+           document.write(str.indexOf("f"));
+           document.write("<br>");
+           document.write(str.lastIndexOf("you"));
+           document.write("<br>");
+           document.write(str.replace("and", "&"));
+           document.write("<br>");
+           //How to create tag in body
+           var para = document.createElement("p");
+           var texNode = document.createTextNode("Hi everyone");
+           para.appendChild(texNode);
+           document.body.appendChild(para)
+           document.write("<br>");
+           //To check locations from global object window
+           document.write(window.location.href);
+           document.write("<br>");
+         
+
+        </script>
+        </br>
+        <script>
+            var info = prompt("What is your name");
+            if (info != "") {
+                document.write("Nice to meet you" + " " + info)
+            }
+        </script>
+        </br>
+        <input type="button" onclick="myFunc()" value="Click me"></input>
+        <script>
+            function myFunc() {
+            var userConfirmation = confirm("Would you like to visit website");
+            if (userConfirmation == true) {
+                window.open("https://www.youtube.com/");
+            } else {
+                document.write("User did not want to visit website");
+            }
+        }
+        </script>
+    </body>
+</html>
