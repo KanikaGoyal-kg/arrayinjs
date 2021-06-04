@@ -69,5 +69,19 @@
             }
         }
         </script>
+        <hr>
+        <script>
+            var data = [
+                {name: 'daniel',age:45},
+                {name: 'daniel',age:45},
+                {name: 'daniel',age:null},
+                {name: 'daniel',age:undefined},
+                {name: null,age:undefined}
+
+            ];
+            const filteredData = data.filter((item) => item.age !== undefined && item.age !== null);
+            console.log(filteredData, "kanika")
+
+        </script>
     </body>
 </html>
