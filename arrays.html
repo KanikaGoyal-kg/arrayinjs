@@ -133,5 +133,26 @@
                 console.log(elements);
             } // this for of will give value of the index
         </script>
+        <br>
+        <script>
+            //Currying function in js is the fn in which multiple no. of arguments
+            //is called in a single function
+            // converting add(1, 2, 3) in add(1) (2) (3) is known as currying
+            function sum(a) {
+                return function(b) {
+                    return function(c) {
+                        return function(d){
+                            console.log(a + b + c + d)
+                        }
+                    }
+                }
+            }
+            sum(5)(10)(7)(3);
+            //or we can also write with fat arrow function
+            const sum = (a) =>  (b) => (c) => (d) => a + b + c + d
+                      
+            const add = sum(5)(10)(7)(3);
+            console.log(add);
+        </script>
     </body>
 </html>
