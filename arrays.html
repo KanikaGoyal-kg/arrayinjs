@@ -102,5 +102,21 @@
             console.log(a);
             console.log(b);
         </script>
+        <hr>
+        The decimal exponential literal is specified by following format : ben ehere 
+        b is 5(it is a base number which either eill be an integer or float number) 
+        which is followed by e(which serves as separator or exponent indicator) and 
+        n is 1(which is exponent or power number).
+        <script>
+            function newFunc() {
+                return 5e1 //how this is coming  (5 * 10) zero will be added acc. to 
+                            //the number written at last. If there will be a negative
+                            //then instead of multiply we have to divide
+                            // 1e -3 = (1 / 1000)
+                            //for 5e50 = (5e + 50 is the last number will be of two digits)
+                            //or if the last number will be of 6 to 7 zeros then value wil be infinity.
+            }
+            console.log(newFunc());
+        </script>
     </body>
 </html>
